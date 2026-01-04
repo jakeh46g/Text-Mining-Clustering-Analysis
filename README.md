@@ -54,8 +54,37 @@ Unsupervised learning analysis to segment customers by age and income demographi
 
 ## Usage
 
-### Run in Google Colab
+### Option 1: Run in Google Colab (Recommended)
 Click the "Open in Colab" badge at the top of the notebook to run this analysis in your browser with no setup required.
+
+1. Click the Colab badge in `K_Means_Clustering.ipynb`
+2. Upload your own `nestegg.csv` file when prompted, or use the sample data
+3. Run all cells
+
+### Option 2: Run Locally
+To run this notebook locally, you'll need to modify the data loading section since it's configured for Google Colab.
+```bash
+# Clone repository
+git clone https://github.com/jakeh46g/K-Means-Clustering-Analysis
+cd K-Means-Clustering-Analysis
+
+# Install required packages
+pip install pandas numpy scikit-learn matplotlib seaborn scipy jupyter
+
+# Start Jupyter notebook
+jupyter notebook
+```
+
+**Then modify the notebook:**
+- Remove or comment out the Google Drive mount cells
+- Change the data loading path from:
+```python
+  df = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/data/nestegg.csv')
+```
+  to:
+```python
+  df = pd.read_csv('nestegg.csv')
+```
 
 ### Run Locally
 ```bash
