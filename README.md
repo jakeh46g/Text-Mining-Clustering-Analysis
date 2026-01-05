@@ -95,28 +95,6 @@ The `airlinetweets.csv` file contains 36 customer complaints covering issues suc
 - Boarding issues and gate operations
 - Wet or damaged belongings
 
-## Usage
-
-### Option 1: Run in Google Colab (Recommended)
-1. Click the "Open in Colab" badge at the top of `Text_Mining.ipynb`
-2. The notebook will open in Google Colab
-3. Run all cells to see the analysis
-
-**Note:** The notebook is configured for Google Colab with Google Drive integration.
-
-### Option 2: Run Locally
-```bash
-# Clone repository (includes dataset airlinetweets.csv)
-git clone https://github.com/jakeh46g/Text-Mining-Clustering-Analysis
-cd Text-Mining-Clustering-Analysis
-
-# Install required packages
-pip install pandas numpy scikit-learn matplotlib scipy jupyter
-
-# Start Jupyter
-jupyter notebook Text_Mining.ipynb
-```
-
 **Important modifications for local execution:**
 
 1. **Remove Google Colab cells**: Comment out or delete these cells at the beginning:
