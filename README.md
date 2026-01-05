@@ -95,23 +95,6 @@ The `airlinetweets.csv` file contains 36 customer complaints covering issues suc
 - Boarding issues and gate operations
 - Wet or damaged belongings
 
-**Important modifications for local execution:**
-
-1. **Remove Google Colab cells**: Comment out or delete these cells at the beginning:
-   ```python
-   from google.colab import drive
-   drive.mount('/content/drive')
-   ```
-
-2. **Update data path**: Change the file loading line from:
-   ```python
-   with open("/content/drive/MyDrive/Colab Notebooks/data/airlinetweets.csv", "r", encoding="utf-8") as file:
-   ```
-   to:
-   ```python
-   with open("airlinetweets.csv", "r", encoding="utf-8") as file:
-   ```
-
 ## Skills Demonstrated
 
 ### Natural Language Processing
